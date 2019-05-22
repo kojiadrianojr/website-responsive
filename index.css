@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+body {
+    background-color: green;
+    width: 100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/* some properties */
+
+.orange {
+    color: #ff803a;
+}
+
+.green {
+    color: #bdd436;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+
+/* nav bar properties */
+
+.nav-bar {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    position: fixed;
+}
+
+.icon {
+    flex-basis: 32%;
+}
+
+.icon a img {
+    background-image: url(../img/wot-logo-whitex2.svg);
+    background-repeat: no-repeat;
+    background-size: 155px 31px;
+    display: block;
+    width: 155px;
+    margin: auto;
+}
+
+.menu-options {
+    background-color: black;
+}
+
+.menu {
+    flex-basis: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    font-size: 1.143em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/* SECTION 1 */
+
+.section-1 {
+    background-image: url(images/pic/wot-masthead-dark.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 520px;
+}
+
+.section-1-heading h1 {
+    margin: 30px 0px;
+    padding-top: 80px;
+    font-size: 155px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Oswald';
+    line-height: 50px;
+}
+
+.section-1-heading small {
+    font-size: 1.571rem;
+    font-weight: 500;
+    display: block;
+    color: #fff;
+    text-align: left;
+}
+
+.headline {
+    letter-spacing: 1px;
+    line-height: 10.000rem;
+    width: 100%;
+    display: block;
+}
+
+.subtitle {
+    font-size: 1.286rem;
+    display: block;
+    text-transform: none;
+    position: relative;
+    font-weight: 500;
+    line-height: 3;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.sec-1-btn {
+    padding: 11px 36px;
+    background-color: #bdd436;
+    border: 2px solid #bdd436;
+    border-radius: 25px;
+    font-size: 1.143rem;
+    width: 50%;
+    line-height: 1.428571429;
+}
+
+.sec-1-btn span {
+    font-family: "Open Sans";
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/* media query */
+
+@media only screen and (min-device-width: 2560px) {
+    .nav-bar {
+        justify-content: space-evenly;
+    }
+    .menu {
+        flex-basis: 30%;
+    }
+}
+
+@media only screen and (min-device-width:1106px) {
+    .section-1-heading {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) and (min-device-width: 992px) {
+    n .menu {
+        flex-basis: 30%;
+    }
+    .section-1 {
+        padding: 50px;
+    }
+    .sec-1-btn {
+        width: 30%;
+    }
+    .head-fix small {
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .nav-bar {
+        background-color: white;
+    }
+    .menu {
+        display: none;
+    }
+    .sec-1-btn {
+        width: 100%;
+    }
+    .section-1-heading .head-fix small {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+    .section-1-heading {
+        margin-top: 50px;
+    }
+}
