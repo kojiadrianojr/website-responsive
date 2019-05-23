@@ -313,6 +313,7 @@ div {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    margin: 10px;
 }
 
 .auntie p,
@@ -353,7 +354,20 @@ div {
     white-space: nowrap;
 }
 
+.section-5 {
+    text-align: center;
+}
 
+.section-5 h2 {
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 300;
+    font-family: 'Oswald';
+    color: #6a787c;
+}
+
+.
 /* media query */
 
 @media only screen and (min-device-width: 2560px) {
@@ -430,9 +444,43 @@ div {
     }
 }
 
+@media only screen and (min-device-width: 450px) {
+    .parent-flex {
+        width: 100%;
+    }
+    .relative {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-1,
+    .row-2 {
+        flex: 1;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .row-1 .child,
+    .row-2 .child {
+        width: 250px;
+        height: 250px;
+        flex-basis: 100%;
+    }
+}
+
 @media only screen and (max-device-width: 425px) {
     .section-1-heading {
         margin-top: 50px;
+    }
+    .section-5 .parent-flex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .relative {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-5 .parent-flex .relative .child {
+        width: 100%;
     }
 }
 
