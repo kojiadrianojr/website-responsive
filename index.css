@@ -262,6 +262,97 @@ div {
     border-left: 2px solid #dfdfdf;
 }
 
+.section-4 {
+    background-color: #f0f0f0;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #486c73;
+    width: 100%;
+}
+
+.section-4-post {
+    text-align: center;
+    padding: 15px;
+}
+
+.section-4 .section-4-post h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 36px;
+    color: #486c73;
+    font-family: 'Oswald';
+}
+
+.section-4 .section-4-post h6 {
+    color: #40666d;
+    font-size: 22px;
+    margin: 5px 0 70px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.section-4-flex-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.uncle,
+.auntie {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.auntie p,
+.uncle p {
+    flex-basis: 45%;
+    background: #fff;
+    margin: 0 0 15px 0;
+    padding: 30px 1em;
+    font-size: 24px;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.uncle p small,
+.auntie p small {
+    font-size: 16px;
+    color: #858585;
+    display: block;
+    margin-top: 5px;
+}
+
+.btn-area {
+    width: 100%;
+    padding: 4em;
+    text-align: center;
+}
+
+.btn {
+    height: 50px;
+    background: #bdd436;
+    border: 2px solid #bdd436;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 11px 36px;
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
 
 /* media query */
 
@@ -277,6 +368,12 @@ div {
 @media only screen and (min-device-width:1106px) {
     .section-1-heading {
         margin: auto;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .section-1-heading small {
+        margin-left: 160px;
     }
 }
 
@@ -301,6 +398,12 @@ div {
     }
 }
 
+@media (min-device-width: 800px) {
+    .parent {
+        align-items: center;
+    }
+}
+
 @media only screen and (max-device-width: 768px) {
     .nav-bar {
         background-color: white;
@@ -321,6 +424,9 @@ div {
     }
     .lf {
         border: 0;
+    }
+    .parent {
+        flex-direction: column;
     }
 }
 
