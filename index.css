@@ -146,6 +146,7 @@ div {
     font-size: 1.143rem;
     width: 50%;
     line-height: 1.428571429;
+    cursor: pointer;
 }
 
 .sec-1-btn span {
@@ -157,6 +158,37 @@ div {
     color: #FFF;
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+.section-2 {
+    padding: 40px 0;
+    text-align: center;
+    color: #6A787C;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    font-weight: 400;
+    font-size: 1.714em;
+    line-height: 36px;
+}
+
+.toolbox {
+    background-image: url(images/ico/sprite_home.png);
+    background-position: -22px -113px;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.section-2 h4 {
+    text-transform: uppercase;
+    font-size: 3.000em;
+    font-weight: 300;
+    font-family: 'Oswald';
 }
 
 
@@ -171,6 +203,8 @@ div {
     }
 }
 
+@media (min-width: 1200px) {}
+
 @media only screen and (min-device-width:1106px) {
     .section-1-heading {
         margin: auto;
@@ -178,8 +212,12 @@ div {
 }
 
 @media only screen and (max-device-width: 1024px) and (min-device-width: 992px) {
-    n .menu {
-        flex-basis: 30%;
+    .nav-bar {
+        background: #FFF;
+        height: 10vh;
+    }
+    .menu li a {
+        color: #97A2A7;
     }
     .section-1 {
         padding: 50px;
@@ -192,9 +230,12 @@ div {
     }
 }
 
+@media (min-width: 992px) {}
+
 @media only screen and (max-device-width: 768px) {
     .nav-bar {
         background-color: white;
+        max-height: 10vh;
     }
     .menu {
         display: none;
@@ -213,3 +254,6 @@ div {
         margin-top: 50px;
     }
 }
+
+
+/* test */
