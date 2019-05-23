@@ -11,8 +11,8 @@ body {
 }
 
 body {
-    background-color: green;
     width: 100%;
+    background: #ffffff;
 }
 
 div {
@@ -191,6 +191,77 @@ div {
     font-family: 'Oswald';
 }
 
+.section-3 {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #97A2A7;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 14px 15px;
+}
+
+.item {
+    text-align: center;
+    flex-basis: 30%;
+    margin-top: 50px;
+}
+
+.l-bulb {
+    background: url(images/ico/sprite_home.png);
+    background-position: -311px -100px;
+    display: block;
+    width: 131px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.arrow {
+    background: url(images/ico/sprite_home.png);
+    background-position: -227px -91px;
+    width: 74px;
+    display: block;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.power-off {
+    background: url(images/ico/sprite_home.png);
+    background-position: -119px -100px;
+    width: 94px;
+    display: block;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.item p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    min-height: 150px;
+    position: relative;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item-arrow {
+    height: 30px;
+    width: 27px;
+    background: url(images/ico/sprite_home.png);
+    display: block;
+    background-position: -46px -292px;
+    margin: 20px auto;
+}
+
+.lf {
+    border-right: 2px solid #dfdfdf;
+    border-left: 2px solid #dfdfdf;
+}
+
 
 /* media query */
 
@@ -203,21 +274,15 @@ div {
     }
 }
 
-@media (min-width: 1200px) {}
-
 @media only screen and (min-device-width:1106px) {
     .section-1-heading {
         margin: auto;
     }
 }
 
-@media only screen and (max-device-width: 1024px) and (min-device-width: 992px) {
+@media only screen and (max-device-width: 992px) {
     .nav-bar {
-        background: #FFF;
         height: 10vh;
-    }
-    .menu li a {
-        color: #97A2A7;
     }
     .section-1 {
         padding: 50px;
@@ -230,7 +295,11 @@ div {
     }
 }
 
-@media (min-width: 992px) {}
+@media (min-device-width: 992px) {
+    .contain-it {
+        max-width: 970px;
+    }
+}
 
 @media only screen and (max-device-width: 768px) {
     .nav-bar {
@@ -246,6 +315,12 @@ div {
     .section-1-heading .head-fix small {
         text-align: center;
         margin-left: 0;
+    }
+    .section-3 {
+        flex-direction: column;
+    }
+    .lf {
+        border: 0;
     }
 }
 
