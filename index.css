@@ -408,7 +408,75 @@ div {
     box-sizing: content-box;
 }
 
-.
+.section-7 {
+    display: flex;
+    height: 60vh;
+    max-width: 100%;
+   
+}
+.section-7 .wallpaper-7 {
+    flex-basis: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.ocean {
+    background-image: url(images/pic/wilmington.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.mountain{
+    background-image: url(images/pic/asheville.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.wallpaper-7 .info-box{
+    margin-top: 70px;
+    flex-basis: 80%;
+    height: auto;
+    background-color: #132023;
+    opacity: 0.8;
+    border-radius: 4px;
+    padding: 30px;
+}
+.section-7 .wallpaper-7 h2{
+    color: #bdd537;
+    letter-spacing: 1px;
+    font-size: 2.143rem;
+    font-weight: 500;
+    
+}
+
+.section-7 .wallpaper-7 p {
+    color: #FFF;
+    letter-spacing: 1px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+footer {
+    padding: auto 30px;
+    display: block;
+    color: #6A787C;
+    margin: 1.5em 0;
+    letter-spacing: 1px;
+    
+}
+footer p {
+    margin: 1.5em 40px;
+    font-size: 0.857em;
+}
+footer p a {
+    text-decoration: none;
+    color: #bdd537;
+}
+
 /* media query */
 
 @media only screen and (min-device-width: 2560px) {
@@ -417,6 +485,9 @@ div {
     }
     .menu {
         flex-basis: 30%;
+    }
+    .post {
+        width: 40%;
     }
     
 }
@@ -486,6 +557,12 @@ div {
     }
     .uncle , .auntie {
         margin: 0;
+    }
+    .section-7 {
+        display: none;
+    }
+    footer {
+        text-align: center;
     }
 }
 
